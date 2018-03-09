@@ -1,0 +1,6 @@
+name: Profile form
+description: "Module pour la gestion d'un formulaire de profil utilisateur."
+type: module
+core: 8.x
+package: Custom
+version: 8.x

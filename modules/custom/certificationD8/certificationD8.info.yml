@@ -1,0 +1,5 @@
+name: certification D8
+description: 'certification Custom Form for the drupalians.'
+type: module
+core: 8.x
+package: BD Custom

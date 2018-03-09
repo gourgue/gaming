@@ -1,0 +1,47 @@
+user.certifications.dashboard:
+  path: '/user/{user}/certifications'
+  defaults:
+    _form: '\Drupal\certification_d8\Form\DashboardCertificationForm'
+    _title: 'Mes certifations'
+  requirements:
+    _access: "TRUE"
+
+# user.certifications.dashboard.old:
+#   path: '/user/{user}/certifications/old'
+#   defaults:
+#     _controller: '\Drupal\certification_d8\Controller\AdminController::content'
+#     _title: 'Mes certifations (anciennement)'
+#   requirements:
+#     _access: "TRUE"
+
+# user.certifications.add:
+#   path: '/user/{user}/certification/add'
+#   defaults:
+#     _form: '\Drupal\certification_d8\Form\AddUpdateCertificationForm'
+#     _title: 'Add Certification'
+#   requirements:
+#     _access: "TRUE"
+
+# user.certifications.update:
+#   path: '/user/{user}/certification/update/{id}'
+#   defaults:
+#     _form: '\Drupal\certification_d8\Form\AddUpdateCertificationForm'
+#     _title_callback: 'Drupal\certification_d8\Form\AddUpdateCertificationForm::getTitle'
+#   requirements:
+#     _access: "TRUE"
+#   parameters:
+#     user:
+#       type: user
+
+# user.certifications.delete:
+#   path: '/user/{user}/certification/delete/{id}'
+#   defaults:
+#     _form: 'Drupal\certification_d8\Form\DeleteCertificationForm'
+#     _title: 'Delete certication'
+#   requirements:
+#     _access: "TRUE"
+#   parameters:
+#     user:
+#       type: user
+
+

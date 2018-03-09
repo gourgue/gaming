@@ -1,0 +1,49 @@
+#api_key: "PUT HERE YOUR API__KEY"
+api_key: "AIzaSyCnQDpceTm2QCLocjOU-I1dO4hegnAZJME" #test with this key
+api_key_is_valid: 0
+map: 
+  address: "12 rue des écoles, 95230, France"
+  latitude: 48.983
+  longitude: 2.294
+  zoom: 10
+  zoom_max: 21
+  zoom_scroll: "false"
+  map_type: "terrain"
+  enable_geoloc: "false"
+marker: 
+  address: ""
+  latitude: 48.983
+  longitude: 2.294
+  title: "Write a title..."
+  enable_info_window: "true"
+  info_window: "<h1><strong>My title</strong></h1><p>My Description</p><p><a href='http://www.google.fr'>Optionnale Links</a></p>"
+form: 
+  transport: 
+    car: "car"
+    public_transport: "public_transport"
+    bike: "bike"
+    walker: "walker"
+  btn_switch: 1
+  btn_minimize_restore: 1
+  ct_start_pl: "Indiquez l'adresse de départ"
+  ct_start: "Adresse de départ"
+  ct_end: "Adresse d'arrivée"
+  ct_btn: "Afficher l'itinéraire"
+  sl_start: 0
+  sl_end: 1
+  title_address: "Splash"
+  address_destination: "rue des champs-élysée Paris"
+appearence: 
+  width_map: "100%"
+  height_map: "500px"
+  top_position: "auto"
+  bottom_position: "3px"
+  left_position: "3px"
+  right_position: "auto"
+  label_text_color: "3c3c3c"
+  button_text_color: "ffffff"
+  header_color: "cccccc"
+  form_color: "f7f7f7"
+  button_color: "e30613"
+  three_btn_color: "bdbdbd"
+  three_btn_hover_color: "787878"

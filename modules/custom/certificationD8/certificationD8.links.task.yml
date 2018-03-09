@@ -1,0 +1,4 @@
+certificationD8_list:
+  title: certifications
+  route_name: certificationD8_list
+  base_route: entity.user.canonical

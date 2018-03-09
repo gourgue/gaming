@@ -1,0 +1,4 @@
+certification_list:
+  title: Certification
+  route_name: certification_list
+  base_route: system.admin_content

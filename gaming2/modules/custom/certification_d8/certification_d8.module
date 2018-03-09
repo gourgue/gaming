@@ -1,0 +1,35 @@
+<?php
+
+/**
+* Implements hook_menu()
+*/
+function certification_d8_menu(){
+  return array(
+    /*'admin/content/certification_d8' => array(
+      'title' => 'Note obtenu submissions',
+      'route_name' => 'user.certifications',
+    ),
+    'admin/content/certification_d8/add' => array(
+      'title' => 'Note obtenu',
+      'route_name' => 'certification_d8_add',
+    ),
+    'admin/content/certification_d8/delete/%' => array(
+      'title' => 'Delete Note obtenu submission',
+      'route_name' => 'certification_d8_delete',
+    ),*/
+  );
+}
+
+/**
+ * Implements hook_permission()
+ */
+/*function certification_d8_permission() {
+  return array(
+    'manage bd contact forms' => array(
+      'title' => t('Manage bd contact form submissions'),
+    ),
+    'use bd contact form' => array(
+      'title' => t('Use the bd contact form'),
+    ),
+  );
+}*/

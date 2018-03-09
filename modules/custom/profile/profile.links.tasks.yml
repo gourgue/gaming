@@ -1,0 +1,4 @@
+profile_list:
+  title: Profile form
+  route_name: profile_list
+  base_route: system.admin_content

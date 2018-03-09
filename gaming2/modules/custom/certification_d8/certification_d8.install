@@ -1,0 +1,52 @@
+<?php
+
+/** @file ...*/
+
+
+
+function certification_d8_schema(){
+
+  $schema['certification'] = array(
+    'description' => 'This table is used to store param for the reservation service',
+    'fields'    => array(
+      'cid'      => array(
+                'type' => 'serial',
+                'unsigned' => TRUE,
+                'not null' => TRUE
+              ),
+     
+      'uid'     => array(
+                'type' => 'int',
+                'unsigned' => TRUE,
+                'not null' => TRUE
+              ),
+      'theme'   => array(
+                'type' => 'varchar',
+                'not null' => TRUE
+              ),
+      'score' => array(
+                'type' => 'varchar',
+                'not null' => TRUE
+              ),
+      'date' => array(
+                'type' => 'date',
+                'not null' => TRUE
+              ),
+       ),
+    
+    ),
+      'users_field_data' => array(
+              'table' => 'users_field_data',
+              'columns' => array(
+                'uid' => 'uid',
+              ),
+      ),
+    ),
+    'primary key' => array(
+      'cid'
+    ),
+  );
+
+  return $schema;
+
+}

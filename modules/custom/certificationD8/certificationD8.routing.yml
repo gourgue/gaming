@@ -1,0 +1,63 @@
+certificationD8_list:
+  path: 'user/{user}/certificationD8'
+  defaults:
+    _controller: '\Drupal\certificationD8\Controller\certificationD8Controller::content'
+  requirements:
+    _permission: 'access content'
+    
+certificationD8_add:
+  path: 'content/certificationD8/add'
+  defaults:
+    _form: '\Drupal\certificationD8\AddForm'
+    _title: 'Create contact'
+  requirements:
+    _permission: 'access content'
+
+certificationD8_edit:
+  path: 'content/certificationD8/edit/{id}'
+  defaults:
+    _form: '\Drupal\certificationD8\AddForm'
+    _title: 'Edit contact'
+  requirements:
+    _permission: 'access content'
+
+certificationD8_delete:
+  path: 'content/certificationD8/delete/{id}'
+  defaults:
+    _form: 'Drupal\certificationD8\DeleteForm'
+    _title: 'Delete contact'
+  requirements:
+    _permission: 'access content'
+
+
+
+# certificationD8_list:
+#   path: '/user/{user}/certificationD8'
+#   defaults:
+#     _controller: '\Drupal\certificationD8\Controller\CertificationD8Controller::content'
+#   requirements:
+#     _permission: 'manage certification D8 forms'
+
+# certificationD8_add:
+#   path: '/user/{user}/certificationD8/add'
+#   defaults:
+#     _form: '\Drupal\certificationD8\AddForm'
+#     _title: 'Create contact'
+#   requirements:
+#     _permission: 'use certification D8 form'
+
+# certificationD8_edit:
+#   path: 'user/content/certificationD8/edit/{id}'
+#   defaults:
+#     _form: '\Drupal\certificationD8\AddForm'
+#     _title: 'Edit contact'
+#   requirements:
+#     _permission: 'use certification D8 form'
+
+# certificationD8_delete:
+#   path: '/user/content/certificationD8/delete/{id}'
+#   defaults:
+#     _form: 'Drupal\certificationD8\DeleteForm'
+#     _title: 'Delete contact'
+#   requirements:
+#     _permission: 'manage certification D8 forms'

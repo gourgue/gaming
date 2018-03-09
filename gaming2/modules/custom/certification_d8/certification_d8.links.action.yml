@@ -1,0 +1,7 @@
+user.certifications.dashboard.action:
+  route_name: 'node.add'
+  title: "Ajouter une certification"
+  route_parameters:
+    node_type: 'certifications'
+  appears_on:
+    - user.certifications.dashboard

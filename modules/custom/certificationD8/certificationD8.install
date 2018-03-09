@@ -1,0 +1,50 @@
+<?php
+
+function certificationD8_schema() {
+  $schema['certificationD8_table'] = array(
+    'fields' => array(
+      'id'        =>array(
+        'type'      =>'serial',
+        'not null'  => TRUE,
+      ),
+      'uid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE
+      ),
+      'theme'=>array(
+        'type'      => 'varchar',
+        'length'    => 40,
+        'not null'  => TRUE,
+      ),
+      'score'     => array(
+        'type'      => 'int',
+        'length'    => 255,
+        'not null'  => TRUE,
+      ),
+      'date'      => array(
+        'type'      => 'int',
+        'not null'  => TRUE, 
+      ),
+    ),
+    'file'=>array(
+        'type'      => 'varchar',
+        'length'    => 40,
+        
+      ),
+
+    'foreign keys'     => array(
+      'node_field_data' => array(
+        'table' => 'node_field_data',              
+      ),
+      'users_field_data' => array(
+        'table' => 'users_field_data',
+        'columns' => array(
+          'uid' => 'uid',
+        ),
+      ),
+    ),
+    'primary key' => array('id'),
+  );
+  return $schema;
+}

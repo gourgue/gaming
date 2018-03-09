@@ -1,0 +1,10 @@
+user.certifications.dashboard.task:
+  title: "Mes certifications"
+  route_name: user.certifications.dashboard
+  base_route: entity.user.canonical
+
+
+# user.certifications.dashboard.old.task:
+#   title: "Mes certifications (anciennement)"
+#   route_name: user.certifications.dashboard.old
+#   base_route: entity.user.canonical

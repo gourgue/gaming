@@ -1,0 +1,30 @@
+certification_list:
+  path: '/admin/content/certification'
+  defaults:
+    _controller: '\Drupal\certification\Controller\CertificationController::content'
+  requirements:
+    _permission: 'manage certification forms'
+
+certification_add:
+  path: '/admin/content/certification/add'
+  defaults:
+    _form: '\Drupal\certification\AddForm'
+    _title: 'Create contact'
+  requirements:
+    _permission: 'use certification form'
+
+certification_edit:
+  path: 'admin/content/certification/edit/{id}'
+  defaults:
+    _form: '\Drupal\certification\AddForm'
+    _title: 'Edit contact'
+  requirements:
+    _permission: 'use certification form'
+
+certification_delete:
+  path: '/admin/content/certification/delete/{id}'
+  defaults:
+    _form: 'Drupal\certification\DeleteForm'
+    _title: 'Delete contact'
+  requirements:
+    _permission: 'manage certification forms'

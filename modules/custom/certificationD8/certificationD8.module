@@ -1,0 +1,35 @@
+<?php
+
+/**
+* Implements hook_menu()
+*/
+function certificationD8_array() {
+  return array(
+    'admin/content/certificationD8' => array(
+      'title'      => 'certification D8 submissions',
+      'route_name' => 'certificationD8_list',
+    ),
+    'admin/content/certificationD8/add' => array(
+      'title'      => 'certification D8',
+      'route_name' => 'certificationD8_add',
+    ),
+    'admin/content/certificationD8/delete/%' => array(
+      'title'      => 'Delete certification D8 submission',
+      'route_name' => 'certificationD8_delete',
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission()
+ */
+/*function certificationD8_permission() {
+  return array(
+    'manage certification D8 forms' => array(
+      'title' => t('Manage certification D8 form submissions'),
+    ),
+    'use certification D8 form' => array(
+      'title' => t('Use the certification D8 form'),
+    ),
+  );
+}*/

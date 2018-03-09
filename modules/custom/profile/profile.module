@@ -1,0 +1,38 @@
+<?php
+
+
+/**
+* Implements hook_menu()
+*/
+function profile_array() {
+  return array(
+    'admin/content/profile' => array(
+      'title' => 'BD Contact submissions',
+      'route_name' => 'profile_list',
+    ),
+    'admin/content/profile/add' => array(
+      'title' => 'Profile form',
+      'route_name' => 'profile_add',
+    ),
+    'admin/content/profile/delete/%' => array(
+      'title' => 'Delete BD Contact submission',
+      'route_name' => 'profile_delete',
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission()
+ */
+/*function profile_permission() {
+  return array(
+    'manage bd contact forms' => array(
+      'title' => t('Manage bd contact form submissions'),
+    ),
+    'use bd contact form' => array(
+      'title' => t('Use the bd contact form'),
+    ),
+  );
+}*/
+
+ 

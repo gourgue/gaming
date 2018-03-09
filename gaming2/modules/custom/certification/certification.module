@@ -1,0 +1,35 @@
+<?php
+
+/**
+* Implements hook_menu()
+*/
+function certification_array() {
+  return array(
+    'admin/content/certification' => array(
+      'title' => 'Certification submissions',
+      'route_name' => 'certification_list',
+    ),
+    'admin/content/certification/add' => array(
+      'title' => 'Certification',
+      'route_name' => 'certification_add',
+    ),
+    'admin/content/certification/delete/%' => array(
+      'title' => 'Delete Certification submission',
+      'route_name' => 'certification_delete',
+    ),
+  );
+}
+
+/**
+ * Implements hook_permission()
+ */
+/*function certification_permission() {
+  return array(
+    'manage Certification forms' => array(
+      'title' => t('Manage Certification form submissions'),
+    ),
+    'use Certification form' => array(
+      'title' => t('Use the Certification form'),
+    ),
+  );
+}*/
